@@ -13,4 +13,7 @@ module.exports = {
     'morgan':{
       logger: require('./env-variables')[process.env.NODE_ENV].morgan.logger
     },
+    'external_api':{
+      'user_auth': process.env.NODE_AUTH_APP_EXT_USR_URL
+    },
 };
